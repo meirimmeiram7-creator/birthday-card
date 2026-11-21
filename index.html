@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Рождения, брат!</title>
+    <script src="script.js" defer></script>
+    <style>
+        /* Настройка общего фона для всей страницы */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            /* Укажи здесь имя файла твоего общего фона */
+            background-image: url('fon.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* Затемнение фона, чтобы белый текст хорошо читался */
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: darken;
+        }
+
+        .card {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #ff9800;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #e68900;
+        }
+
+        /* Блок с фотографиями (изначально скрыт) */
+        #gallery {
+            display: none; 
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        /* Оформление каждой фотки на общем фоне */
+        #gallery img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border: 4px solid white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1 id="title">С Днем Рождения, брат!</h1>
+        <p>Желаю здоровья, успехов во всех делах и крутых моментов в жизни!</p>
+        
+        <button id="showPhotosBtn">Открыть наши фотки</button>
+
+        <!-- Сюда добавляй сколько угодно фоток -->
+        <div id="gallery">
+            <img src="5192864371858678957.png" alt="Фото 1">
+            <img src="era.png" alt="Фото 2">
+            <img src="era2.png" alt="Фото 3">
+        </div>
+    </div>
+
+</body>
+</html>
